@@ -1,4 +1,9 @@
 ---
+- name: Ensure prerequisite packages are present.
+  apt:
+    pkg: 'unzip'
+    state: present
+
 - name: Ensure install directory is present.
   file:
     path: "{{ glowroot_install_dir }}"
