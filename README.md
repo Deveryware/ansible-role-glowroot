@@ -21,6 +21,7 @@ This Ansible role installs and configures Glowroot (Official website: https://gl
 
     glowroot_port: 4000
     glowroot_bind_address: '127.0.0.1'
+    glowroot_context_path: '/'
 
 ## License
 

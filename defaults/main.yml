@@ -6,3 +6,4 @@ glowroot_install_dir: '/opt'
 
 glowroot_port: 4000
 glowroot_bind_address: '127.0.0.1'
+glowroot_context_path: '/'
