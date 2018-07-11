@@ -28,6 +28,18 @@ Default credentials; admin / admin
     glowroot_owner: 'root'
     glowroot_group: 'root'
 
+### LDAP
+
+    glowroot_ldap_host: 'ldap.company.eu'
+    glowroot_ldap_port: 636
+    glowroot_ldap_username: 'ldapviewer'
+    glowroot_user_base_dn: 'ou=User,dc=company,dc=eu'
+    glowroot_user_search_filter: '(uid={0})'
+    glowroot_group_base_dn: 'ou=Groups,dc=company,dc=eu'
+    glowroot_group_search_filter: 'member={0}'
+
+You will have to set the _password_ into the file `admin.json`.
+
 ## License
 
 MIT

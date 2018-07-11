@@ -50,5 +50,17 @@
       500
     ],
     "traceCappedDatabaseSizeMb": 500
+{% if glowroot_ldap_host is defined %}
+  },
+  "ldap": {
+    "host": "{{ glowroot_ldap_host }}",
+    "port": {{ glowroot_ldap_port }},
+    "username": "{{ glowroot_ldap_username }}",
+    "password": "FnfzLZwLrFpScmpAhbg0Pw:7UKXtVNb2u/sUNunXoITyg",
+    "userBaseDn": "{{ glowroot_user_base_dn }}",
+    "userSearchFilter": "{{ glowroot_user_search_filter }}",
+    "groupBaseDn": "{{ glowroot_group_base_dn }}",
+    "groupSearchFilter": "{{ glowroot_group_search_filter }}"
+{% endif %}
   }
 }
