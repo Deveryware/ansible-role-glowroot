@@ -33,5 +33,6 @@
   file:
     path: "{{ glowroot_home_dir }}"
     owner: "{{ glowroot_owner }}"
+    group: "{{ glowroot_group }}"
     recurse: yes
     state: directory

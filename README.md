@@ -24,6 +24,7 @@ This Ansible role installs and configures Glowroot (Official website: https://gl
     glowroot_context_path: '/'
 
     glowroot_owner: 'root'
+    glowroot_group: 'root'
 
 ## License
 
