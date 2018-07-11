@@ -28,3 +28,10 @@
   with_items:
   - 'admin.json'
   - 'config.json'
+
+- name: Ensure Glowroot directory ownership.
+  file:
+    path: "{{ glowroot_home_dir }}"
+    owner: "{{ glowroot_owner }}"
+    recurse: yes
+    state: directory
