@@ -10,6 +10,8 @@ This Ansible role installs and configures Glowroot (Official website: https://gl
 
     http://localhost:4000
 
+Default credentials; admin / admin
+
 ## Example Playbook
 
     - hosts: servers
