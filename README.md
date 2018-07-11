@@ -2,7 +2,7 @@
 
 This Ansible role installs and configures Glowroot (Official website: https://glowroot.org/).
 
-## Prerequisites
+## Prerequisites
 
 * None
 
