@@ -10,12 +10,17 @@ This Ansible role installs and configures Glowroot (Official website: https://gl
 
     http://localhost:4000
 
-# Example Playbook
+## Example Playbook
 
     - hosts: servers
       roles:
       - ansible-role-glowroot
         glowroot_bind_address: '0.0.0.0'
+
+## Variables
+
+    glowroot_port: 4000
+    glowroot_bind_address: '127.0.0.1'
 
 ## License
 
