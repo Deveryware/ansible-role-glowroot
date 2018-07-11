@@ -33,12 +33,13 @@ Default credentials; admin / admin
     glowroot_ldap_host: 'ldap.company.eu'
     glowroot_ldap_port: 636
     glowroot_ldap_username: 'ldapviewer'
+    glowroot_ldap_password: '005PQPXB31t5QEc+UZNRkw:Kzs7v+nDPl4bwkOWCFRrDw:500000'
     glowroot_user_base_dn: 'ou=User,dc=company,dc=eu'
     glowroot_user_search_filter: '(uid={0})'
     glowroot_group_base_dn: 'ou=Groups,dc=company,dc=eu'
     glowroot_group_search_filter: 'member={0}'
 
-You will have to set the _password_ into the file `admin.json`.
+You will have to set the _password_ into the webui in order to retrieve the hash in the file `admin.json`.
 
 ## License
 
