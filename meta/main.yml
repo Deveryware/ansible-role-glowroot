@@ -1,0 +1,22 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: Olivier Locard
+  description: Glowroot Installation/Configuration
+  company: "Deveryware"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.9
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  galaxy_tags:
+    - glowroot
+    - java
+    - development
+    - performance
+    - monitoring
