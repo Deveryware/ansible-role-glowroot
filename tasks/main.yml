@@ -1,0 +1,5 @@
+---
+- name: Ensure install directory is present.
+  file:
+    path: "{{ glowroot_install_dir }}"
+    state: directory
