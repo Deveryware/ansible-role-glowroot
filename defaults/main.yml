@@ -3,3 +3,5 @@ glowroot_version: '0.10.12'
 glowroot_url: "https://github.com/glowroot/glowroot/releases/download/v{{ glowroot_version }}/glowroot-{{ glowroot_version }}-dist.zip"
 
 glowroot_install_dir: '/opt'
+
+glowroot_bind_address: '127.0.0.1'
