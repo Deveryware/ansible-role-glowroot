@@ -19,12 +19,12 @@
     src: "{{ glowroot_install_dir }}/glowroot.zip"
     dest: "{{ glowroot_install_dir }}"
     copy: no
-    creates: "{{ glowroot_install_dir }}/glowroot/glowroot.jar"
+    creates: "{{ glowroot_home_dir }}/glowroot.jar"
 
 - name: Ensure configuration files are present.
   template:
     src: "{{ item }}.j2"
-    dest: "{{ glowroot_install_dir }}/glowroot/{{ item }}"
+    dest: "{{ glowroot_home_dir }}/{{ item }}"
   with_items:
   - 'admin.json'
   - 'config.json'
