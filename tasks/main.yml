@@ -3,3 +3,8 @@
   file:
     path: "{{ glowroot_install_dir }}"
     state: directory
+
+- name: Ensure compressed file is downloaded.
+  get_url:
+    url: "{{ glowroot_url }}"
+    dest: "{{ glowroot_install_dir }}/glowroot.zip"
