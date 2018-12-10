@@ -55,6 +55,7 @@
   "ldap": {
     "host": "{{ glowroot_ldap_host }}",
     "port": {{ glowroot_ldap_port }},
+    "ssl": {{ glowroot_ldap_ssl | lower }},
     "username": "{{ glowroot_ldap_username }}",
     "password": "{{ glowroot_ldap_password }}",
     "userBaseDn": "{{ glowroot_user_base_dn }}",

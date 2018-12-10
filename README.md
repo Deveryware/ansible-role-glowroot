@@ -35,6 +35,7 @@ Default credentials; admin / admin
 
     glowroot_ldap_host: 'ldap.company.eu'
     glowroot_ldap_port: 636
+    glowroot_ldap_ssl: true
     glowroot_ldap_username: 'ldapviewer'
     glowroot_ldap_password: '005PQPXB31t5QEc+UZNRkw:Kzs7v+nDPl4bwkOWCFRrDw:500000'
     glowroot_user_base_dn: 'ou=User,dc=company,dc=eu'
