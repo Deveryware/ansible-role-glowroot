@@ -29,10 +29,29 @@
   - 'admin.json'
   - 'config.json'
 
+- name: Ensure Glowroot group is present.
+  group:
+    name: "{{ glowroot_group }}"
+    state: present
+
+- name: Ensure Glowroot user is present.
+  user:
+    name: "{{ glowroot_owner }}"
+    state: present
+
 - name: Ensure Glowroot directory ownership.
   file:
     path: "{{ glowroot_home_dir }}"
     owner: "{{ glowroot_owner }}"
     group: "{{ glowroot_group }}"
+    mode: 'g+w'
     recurse: yes
     state: directory
+
+- name: Add users to the Glowroot group.
+  user:
+    name:   "{{ item }}"
+    groups: "{{ glowroot_group }}"
+    append: yes
+  with_items: "{{ glowroot_group_members }}"
+  when: glowroot_group_members is defined

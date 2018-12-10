@@ -26,7 +26,10 @@ Default credentials; admin / admin
     glowroot_context_path: '/'
 
     glowroot_owner: 'root'
-    glowroot_group: 'root'
+    glowroot_group: 'glowroot'
+
+    glowroot_group_members:
+    - 'my_app_account'
 
 ### LDAP
 
