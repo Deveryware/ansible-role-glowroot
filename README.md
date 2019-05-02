@@ -47,7 +47,7 @@ You will have to set the _password_ into the webui in order to retrieve the hash
 
 ### Storage
 
-### data.h2.db
+### data.h2.db
 
 **Response time and JVM gauge data** respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
 
