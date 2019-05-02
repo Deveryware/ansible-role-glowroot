@@ -10,3 +10,8 @@
     dest: "{{ glowroot_install_dir }}"
     copy: no
     creates: "{{ glowroot_home_dir }}/glowroot.jar"
+
+- name: Ensure dowloaded file is removed.
+  file:
+    path: "{{ glowroot_install_dir }}/glowroot.zip"
+    state: absent
