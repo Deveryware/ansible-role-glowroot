@@ -14,6 +14,8 @@
     path: "{{ glowroot_home_dir }}/glowroot.jar"
   register: glowroot_jar
 
+- include_tasks: latest.yml
+
 - include_tasks: installation.yml
   when: glowroot_jar.stat.exists == false
 

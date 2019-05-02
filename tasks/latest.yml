@@ -1,0 +1,9 @@
+---
+- name: Latest - Get the latest version.
+  shell: "curl -sLI -o /dev/null -w %{url_effective} https://github.com/glowroot/glowroot/releases/latest |awk -F'/v' '{print $NF}'"
+  register: get_latest_version
+  changed_when: false
+
+- name: Latest - Set glowroot_version with the latest version.
+  set_fact:
+    glowroot_version: "{{ get_latest_version.stdout }}"
