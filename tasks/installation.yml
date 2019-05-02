@@ -1,4 +1,12 @@
 ---
+- name: Ensure old files are not still there.
+  file:
+    path: "{{ glowroot_home_dir }}/{{ item }}"
+    state: absent
+  with_items:
+    - 'glowroot.jar'
+    - 'lib'
+
 - name: Ensure compressed file is downloaded.
   get_url:
     url: "{{ glowroot_url }}"

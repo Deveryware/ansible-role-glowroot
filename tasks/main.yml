@@ -17,7 +17,8 @@
 - include_tasks: latest.yml
 
 - include_tasks: installation.yml
-  when: glowroot_jar.stat.exists == false
+  when: (glowroot_jar.stat.exists == false or
+         glowroot_version != glowroot_actual_version.stdout)
 
 - name: Ensure configuration files are present.
   template:
