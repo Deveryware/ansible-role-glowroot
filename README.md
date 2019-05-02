@@ -47,18 +47,19 @@ You will have to set the _password_ into the webui in order to retrieve the hash
 
 ### Storage
 
-#### Response time and JVM gauge data
+### data.h2.db
 
-Respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
+**Response time and JVM gauge data** respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
 
     glowroot_rtjg_1m: 72
     glowroot_rtjg_5m: 336
     glowroot_rtjg_30m: 2160
     glowroot_rtjg_4h: 2160
 
-#### Query, service call and profile data
 
-Respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
+### .capped.db
+
+**Query, service call and profile data** respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
 
     glowroot_qscp_1m: 500
     glowroot_qscp_5m: 500
