@@ -44,10 +44,10 @@
     "traceExpirationHours": 336,
     "fullQueryTextExpirationHours": 336,
     "rollupCappedDatabaseSizesMb": [
-      500,
-      500,
-      500,
-      500
+      {{ glowroot_qscp_1m }},
+      {{ glowroot_qscp_5m }},
+      {{ glowroot_qscp_30m }},
+      {{ glowroot_qscp_4h }}
     ],
     "traceCappedDatabaseSizeMb": 500
 {% if glowroot_ldap_host is defined %}

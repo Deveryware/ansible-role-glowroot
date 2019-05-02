@@ -15,3 +15,8 @@ glowroot_rtjg_1m: 72
 glowroot_rtjg_5m: 336
 glowroot_rtjg_30m: 2160
 glowroot_rtjg_4h: 2160
+# Query, service call and profile data
+glowroot_qscp_1m: 500
+glowroot_qscp_5m: 500
+glowroot_qscp_30m: 500
+glowroot_qscp_4h: 500

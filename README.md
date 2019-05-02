@@ -45,7 +45,9 @@ Default credentials; admin / admin
 
 You will have to set the _password_ into the webui in order to retrieve the hash in the file `admin.json`.
 
-### Response time and JVM gauge data
+### Storage
+
+#### Response time and JVM gauge data
 
 Respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
 
@@ -53,6 +55,15 @@ Respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
     glowroot_rtjg_5m: 336
     glowroot_rtjg_30m: 2160
     glowroot_rtjg_4h: 2160
+
+#### Query, service call and profile data
+
+Respectively 1 minute, 5 minutes, 30 mintes and 4 hours aggregates:
+
+    glowroot_qscp_1m: 500
+    glowroot_qscp_5m: 500
+    glowroot_qscp_30m: 500
+    glowroot_qscp_4h: 500
 
 ## License
 
