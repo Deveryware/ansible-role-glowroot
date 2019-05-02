@@ -56,6 +56,8 @@ You will have to set the _password_ into the webui in order to retrieve the hash
     glowroot_rtjg_30m: 2160
     glowroot_rtjg_4h: 2160
 
+    glowroot_trace_data: 336
+    glowroot_full_query_text: 336
 
 ### .capped.db
 

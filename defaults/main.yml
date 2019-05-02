@@ -17,6 +17,9 @@ glowroot_rtjg_5m: 336
 glowroot_rtjg_30m: 2160
 glowroot_rtjg_4h: 2160
 
+glowroot_trace_data: 336
+glowroot_full_query_text: 336
+
 # Storage - *.capped.db
 # Query, service call and profile data
 glowroot_qscp_1m: 500

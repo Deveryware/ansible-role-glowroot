@@ -41,8 +41,8 @@
       {{ glowroot_rtjg_30m }},
       {{ glowroot_rtjg_4h }}
     ],
-    "traceExpirationHours": 336,
-    "fullQueryTextExpirationHours": 336,
+    "traceExpirationHours": {{ glowroot_trace_data }},
+    "fullQueryTextExpirationHours": {{ glowroot_full_query_text }},
     "rollupCappedDatabaseSizesMb": [
       {{ glowroot_qscp_1m }},
       {{ glowroot_qscp_5m }},
