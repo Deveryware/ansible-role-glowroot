@@ -68,6 +68,8 @@ You will have to set the _password_ into the webui in order to retrieve the hash
     glowroot_qscp_30m: 500
     glowroot_qscp_4h: 500
 
+    glowroot_trace_detail_data: 500
+
 ## License
 
 MIT

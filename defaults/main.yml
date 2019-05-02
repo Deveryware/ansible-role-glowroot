@@ -26,3 +26,5 @@ glowroot_qscp_1m: 500
 glowroot_qscp_5m: 500
 glowroot_qscp_30m: 500
 glowroot_qscp_4h: 500
+
+glowroot_trace_detail_data: 500

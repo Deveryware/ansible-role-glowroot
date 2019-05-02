@@ -49,7 +49,7 @@
       {{ glowroot_qscp_30m }},
       {{ glowroot_qscp_4h }}
     ],
-    "traceCappedDatabaseSizeMb": 500
+    "traceCappedDatabaseSizeMb": {{ glowroot_trace_detail_data }}
 {% if glowroot_ldap_host is defined %}
   },
   "ldap": {
