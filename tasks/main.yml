@@ -9,17 +9,13 @@
     path: "{{ glowroot_install_dir }}"
     state: directory
 
-- name: Ensure compressed file is downloaded.
-  get_url:
-    url: "{{ glowroot_url }}"
-    dest: "{{ glowroot_install_dir }}/glowroot.zip"
+- name: Ensure glowroot is installed.
+  stat:
+    path: "{{ glowroot_home_dir }}/glowroot.jar"
+  register: glowroot_jar
 
-- name: Ensure downloaded file is uncompressed.
-  unarchive:
-    src: "{{ glowroot_install_dir }}/glowroot.zip"
-    dest: "{{ glowroot_install_dir }}"
-    copy: no
-    creates: "{{ glowroot_home_dir }}/glowroot.jar"
+- include_tasks: installation.yml
+  when: glowroot_jar.stat.exists == false
 
 - name: Ensure configuration files are present.
   template:
