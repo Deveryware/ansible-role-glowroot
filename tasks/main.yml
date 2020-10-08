@@ -24,6 +24,7 @@
   template:
     src: "{{ item }}.j2"
     dest: "{{ glowroot_home_dir }}/{{ item }}"
+    mode: 'g+rw'
   with_items:
   - 'admin.json'
   - 'config.json'
@@ -43,7 +44,7 @@
     path: "{{ glowroot_home_dir }}"
     owner: "{{ glowroot_owner }}"
     group: "{{ glowroot_group }}"
-    mode: 'g+w'
+    mode: 'g+rw'
     recurse: yes
     state: directory
 
